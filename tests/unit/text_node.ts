@@ -7,7 +7,7 @@ import { RootRequire } from '@dojo/interfaces/loader';
 
 declare const require: RootRequire;
 
-const basePath = '_build/tests/support/data/';
+const basePath = 'dist/testing/tests/support/data/';
 let fsSpy: SinonSpy;
 
 registerSuite('text - node', {

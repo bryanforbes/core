@@ -50,7 +50,7 @@ const suite: Tests = {
 if (has('host-node')) {
 	const nodeRequire: any = (<any> require).nodeRequire || require;
 	const path: any = nodeRequire('path');
-	const buildDir: string = path.join(process.cwd(), '_build');
+	const buildDir: string = path.join(process.cwd(), 'dist', 'testing');
 
 	suite.node = {
 		'useDefault resolves es modules'(this: any) {

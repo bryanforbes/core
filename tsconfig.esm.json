@@ -1,0 +1,4 @@
+{
+	"extends": "./node_modules/@dojo/scripts/tsconfig/esm.json"
+}
+

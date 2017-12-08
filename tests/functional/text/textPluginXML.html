@@ -6,19 +6,19 @@
 	</head>
 
 	<body>
-		<script src="../../../../node_modules/@dojo/shim/util/amd.js"></script>
-		<script src="../../../../node_modules/@dojo/loader/loader.js"></script>
+		<script src="../../../../../node_modules/@dojo/shim/util/amd.js"></script>
+		<script src="../../../../../node_modules/@dojo/loader/loader.js"></script>
 		<script>
 			require.config(shimAmdDependencies({
-				baseUrl: '../../../../',
+				baseUrl: '../../../../../',
 				packages: [
-					{ name: 'src', location: '_build/src' },
-					{ name: 'tests', location: '_build/tests' }
+					{ name: 'src', location: 'dist/testing/src' },
+					{ name: 'tests', location: 'dist/testing/tests' }
 				]
 			}));
 			require(['@dojo/shim/main'], function () {
 				require([
-					'src/text!./_build/tests/support/data/strip.xml!strip'
+					'src/text!./dist/testing/tests/support/data/strip.xml!strip'
 				], function (result) {
 					window.loaderTestResults = {
 						text: result

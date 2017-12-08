@@ -584,7 +584,7 @@ function testXhr(baseUrl, testUrl) {
 		baseUrl: baseUrl
 	}));
 
-	require(['@dojo/shim/main', '_build/src/request/providers/xhr'], function (_, xhr) {
+	require(['@dojo/shim/main', 'dist/testing/src/request/providers/xhr'], function (_, xhr) {
 		xhr.default(testUrl).then(function (response) {
 			return response.json();
 		}).then(function (json) {

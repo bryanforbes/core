@@ -11,8 +11,7 @@ node_modules
 bower_components
 tests/typings/dist/
 .baseDir.ts
-html-report
-coverage-final.lcov
-coverage-unmapped.json
+/html-report
+/coverage.json
 /_build
 /_apidoc

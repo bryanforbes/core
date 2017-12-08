@@ -15,10 +15,10 @@ declare const require: RootRequire;
 // for get tests.
 const basePath = (function() {
 	if (has('host-browser')) {
-		return '../../_build/tests/support/data/';
+		return '../../dist/testing/tests/support/data/';
 	}
 	else if (has('host-node')) {
-		return './_build/tests/support/data/';
+		return './dist/testing/tests/support/data/';
 	}
 })();
 const absPathMock = (val: string) => val;
